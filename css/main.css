@@ -1,3 +1,5 @@
+/* Practiced creating a responsive Website as an educational exercise. Starter code from Skillcrush */
+
 @font-face{
 	font-family: 'Wisdom Script';
 	src: url('../fonts/wisdom-script.otf') format('opentype');
@@ -97,7 +99,7 @@ header nav ul li a{
 }
 .main-image img {
 	width: 100%;
-	border-bottom: .1875 solid #77a466;
+	border-bottom: .1875em solid #77a466;
 }
 
 .main-title {
@@ -338,7 +340,7 @@ footer span {
 	}
 	.main-image img {
 		width: 100%;
-		border-bottom: .1875em solid #77a466;
+		border-bottom: 3px solid #77a466;
 		margin: 0px;
 		padding: 0px;
 	}
