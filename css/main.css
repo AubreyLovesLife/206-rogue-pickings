@@ -1,19 +1,23 @@
-
 @font-face{
 	font-family: 'Wisdom Script';
 	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
+html {
+	font-size: 16px;
+}
+
 body {
+	font-size: .8em;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0px 16px;
+	padding: 0px 1em;
 }
 
 .container{
-	max-width: 1200px;
+	max-width: 80em;
 	margin: 0 auto;
 }
 
@@ -23,31 +27,31 @@ h3,
 h4 {
 	color: black;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 43.75em;
 }
 h1 {
-	font-size: 30px;
-	border-bottom: 3px solid #77a466;
+	font-size: 2em;
+	border-bottom: .1875em solid #77a466;
 	margin: 0 auto;
 }
 h2 {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 h3 {
-	font-size: 18px;
+	font-size: 1.125em;
 }
 h4 {
-	font-size: 12px;
+	font-size: .75em;
 }
 
 p {
-	font-size: 14px;
-	line-height: 21px;
+	font-size: .875em;
+	line-height: 1.3em;
 }
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
+	border-bottom: .1875em solid #77a466;
 	margin: 0 auto;
 }
 
@@ -62,7 +66,7 @@ header h1 span {
 
 header nav {
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 1.25em;
 }
 header nav ul {
 	margin: 0;
@@ -71,9 +75,9 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: .875em;
 	padding: 0 0px;
-	margin-top: 16px;
+	margin-top: 1em;
 	display: block;
 	width: 100%;
 }
@@ -93,21 +97,23 @@ header nav ul li a{
 }
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	border-bottom: .1875 solid #77a466;
 }
 
 .main-title {
 	height: auto;
 }
 .main-title h3 {
-	text-align: left;
-	padding: 5px 0;
+	text-align: center;
+	padding: .3125em 0;
 	color: #77a466;
+
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
-	line-height: 30px;
+	font-size: 1em;
+	line-height: 1.875em;
+	text-align: justify;
 }
 
 .section-one,
@@ -115,17 +121,17 @@ header nav ul li a{
 .section-three {
 	width: 100%;
 	height: auto;
-	border-top: 1px solid #eee;
+	border-top: 0.0625em solid #eee;
 }
 
 .section-one h4 {
-	padding: 10px 0;
+	padding: .625em 0;
 	text-align: center;
 }
 
 .section-two h4,
 .section-three h4 {
-	padding: 10px 0px 0px 0px;
+	padding: .625em 0px 0px 0px;
 	text-align: center;
 }
 
@@ -135,26 +141,27 @@ header nav ul li a{
 	text-align: center;
 }
 .menu li {
-	padding: 10px 0;
+	padding: .625em 0;
 	color:#77a466;
 }
 
 .reviews {
 	color: #333;
-	font-size: 16px;
-	line-height: 21px;
+	font-size: 1em;
+	line-height: 1.3125em;
+	text-align: justify;
 }
 
 .address {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1em;
+	line-height: 1.5em;
 	text-align: center;
 }
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
-	border-top: 3px solid #eee;
+	height: 3.125em;
+	border-top: 0.1875em solid #eee;
 	margin: 0 auto;
 	clear: both;
 	text-align: center;
@@ -177,10 +184,13 @@ footer span {
 
 @media (min-width: 768px) AND (max-width: 1199px) {
 	
+	html {
+		font-size: 20px;
+	}
 	
 	header nav {
 		width: 100%;
-		padding: 26px 0;
+		padding: 1.625em 0;
 		border-bottom: 3px solid #77a466;
 		margin: 0 auto;
 	}
@@ -191,8 +201,8 @@ footer span {
 	header nav ul li {
 		text-transform: uppercase;
 		font-weight: 700;
-		font-size: 14px;
-		padding: 0 10px;
+		font-size: .875em;
+		padding: 0 .625em;
 		display: inline;
 	}
 	header nav ul li a{
@@ -207,32 +217,32 @@ footer span {
 	.section-two {
 		width: 58%;
 		float: left;
-		border-top: 1px solid #eee;
+		border-top: .0625em solid #eee;
 		padding: 0px 2%;
 	}
 	.section-three {
 		width: 36%;
 		height: auto;
 		float: left;
-		border-top: 1px solid #eee;
+		border-top: .0625em solid #eee;
 	}
 	
 
 	
 	.section-two {
-		border-right: 1px solid #eee;
+		border-right: .0625em solid #eee;
 	}
 	
 	.section-two h4,
 	.section-three h4 {
-		padding: 10px 30px;
+		padding: .625em 30px;
 	}
 	footer {
-		height: 80px;
+		height: 5em;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-top: 3px solid #eee;
+		border-top: .1875em solid #eee;
 		margin: 0 auto;
 		clear: both;
 		text-align: center;
@@ -242,6 +252,10 @@ footer span {
 /*======================================================================= Desktop Styles =======================*/
 
 @media (min-width: 1200px) {
+
+	html {
+		font-size: 22px;
+	}
 	
 	body {
 		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -249,6 +263,7 @@ footer span {
 		justify-content: center;
 		align-items: center;
 		height: 100%;
+
 	}
 	
 	.container{
@@ -265,35 +280,26 @@ footer span {
 		font-weight: 700;
 	}
 	h1 {
-		font-size: 30px;
+		font-size: 1.875em;
 	}
 	h2 {
-		font-size: 24px;
-	}
-	h3 {
-		font-size: 18px;
-	}
-	h4 {
-		font-size: 12px;
+		font-size: 1.5em;
 	}
 	
+	
 	p {
-		font-size: 14px;
-		line-height: 21px;
-		padding: 0 30px;
+		padding: 0 2em;
 	}
 	
 	/*The widths are in a percentage!*/
 	header {
-		height: 110px;
-		border-bottom: 3px solid #77a466;
+		height: 4.875em;
 		margin: 0 auto;
 	}
 	
 	header h1 {
 		float: left;
-		margin: 0;
-		padding: 38px 0;
+		margin-top: .2em;
 		border: none;
 	}
 	header h1 span {
@@ -302,17 +308,16 @@ footer span {
 	
 	header nav {
 		float: right;
-		padding-top: 50px;
+		
 	}
 	header nav ul {
-		margin: 0;
+		margin-top: 2em;
 		padding: 0;
+		
 	}
 	header nav ul li {
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 14px;
-		padding: 0 10px;
+		font-size: .875em;
+		padding: 0 0.625em;
 		display: inline;
 	}
 	header nav ul li a{
@@ -333,7 +338,9 @@ footer span {
 	}
 	.main-image img {
 		width: 100%;
-		border-bottom: 3px solid #77a466;
+		border-bottom: .1875em solid #77a466;
+		margin: 0px;
+		padding: 0px;
 	}
 	
 	.main-title {
@@ -342,69 +349,83 @@ footer span {
 	}
 	.main-title h3 {
 		text-align: left;
-		padding: 5px 0;
+		padding: .3125em 0;
 		color: #77a466;
 	}
 	.main-title p {
 		padding: 0;
-		font-size: 16px;
-		line-height: 25px;
+		font-size: 1em;
+		line-height: 1.5625em;
 	}
 	
 	.section-one,
 	.section-two,
 	.section-three {
+		align-content: center;
+		text-align: center;
 		width: 33%;
 		height: auto;
 		float: left;
-		border-top: 1px solid #eee;
+		border-top: .0625em solid #eee;
 	}
 	
 	.section-one h4 {
-		padding: 10px 0;
+		padding: .525em 0;
+		font-size: 1em;
+		width: 100%;
+		text-align: center;
 	}
 	
 	.section-two {
-		border-left: 1px solid #eee;
-		border-right: 1px solid #eee;
-		padding: 0px;
+		border-left: .0625em solid #eee;
+		border-right: .0625em solid #eee;
+		padding: 0px;	
 	}
 	
 	.section-two h4,
 	.section-three h4 {
-		padding: 10px 30px;
+		font-size: 1em;
+		text-align: center;
+		width: 100%;
+		text-align: center;
 	}
+
+	
+	.section-three p {
+		line-height: 2.5em;
+	}
+
 	
 	.menu {
 		list-style: none;
 		padding: 0;
 	}
 	.menu li {
-		padding: 10px 0;
+		padding: .625em 0;
 		color:#77a466;
 	}
 	
 	.reviews {
 		color: #333;
-		font-size: 16px;
-		line-height: 21px;
+		font-size: 1em;
+		line-height: 1.3125em;
 	}
 	
 	.address {
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 1em;
+		line-height: 1.5em;
 	}
 	
 	/*The widths are in a percentage!*/
 	footer {
-		padding-top: 2em;
+		padding-top: .125em;
 	}
 	footer span {
 		
 		font-family: 'Wisdom Script', cursive;
 		text-transform: lowercase;
 		color: #77a466;
-		font-size: 14px;
+		font-size: .875em;
 	}
 }
 
